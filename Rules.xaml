@@ -1,0 +1,36 @@
+﻿<Window x:Class="Sapper.Rules"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sapper"
+        mc:Ignorable="d"
+        Title="Rules" Height="500" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Правила"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="30"
+                   FontFamily="Segoe UI black">
+        </TextBlock>
+        <TextBlock Text=" 1. Цель игры: Основная цель игры в сапер - открыть все клетки на игровом поле, не попадая на мину." FontSize="13" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="1"></TextBlock>
+        <TextBlock Text=" 2. Игровое поле: Игровое поле представляет собой сетку из клеток. В каждой клетке может быть мина или числовое значение, показывающее количество мин вокруг этой клетки." FontSize="13" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="2"></TextBlock>
+        <TextBlock Text=" 3. Открытие клеток: Игрок открывает клетки по одной, щелкая по ним мышью. Если в открытой клетке есть мина, игра проиграна." FontSize="13" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="3"></TextBlock>
+        <TextBlock Text=" 4. Числовые значения: Числовые значения в клетках показывают сколько мин находится вокруг данной клетки. Это помогает игроку определить, где находятся мины." FontSize="13" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="4"></TextBlock>
+        <TextBlock Text=" 5. Флажки: Игрок может поставить флажок на клетку, если подозревает, что там находится мина. Это помогает избежать ошибок." FontSize="13" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="5"></TextBlock>
+        <TextBlock Text=" 6. Победа: Игра выиграна, когда все клетки без мин открыты." FontSize="13" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="6"></TextBlock>
+        <TextBlock Text=" 7. Поражение: Игра проиграна, если игрок открывает клетку с миной." FontSize="13" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="7"></TextBlock>
+        <TextBlock Text=" 8. Уровни сложности: В игре Сапер обычно есть несколько уровней сложности, включая размер поля и количество мин." FontSize="13" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="8"></TextBlock>
+    </Grid>
+</Window>
